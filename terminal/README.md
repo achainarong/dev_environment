@@ -1,5 +1,9 @@
 # Terminal Preferences
 
+## general
+
+shell open with Command /bin/bash
+
 ## Text
 
 Remove:
