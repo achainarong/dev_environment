@@ -17,12 +17,13 @@ alias home="cd ~"
 
 alias g="git"
 alias gs="git status"
-alias gd="git 2"
-alias gb="git branch"222
+alias gd="git diff"
+alias gb="git branch"
 alias gm="git checkout main"
 alias gl="git log"
 alias commit="git commit -am"
 alias push="git push"
+alias pull="git pull"
 
 # ANSIBLE
 
