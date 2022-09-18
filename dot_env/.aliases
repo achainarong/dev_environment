@@ -24,8 +24,6 @@ alias gl="git log"
 alias commit="git commit -am"
 alias push="git push"
 
-
-
 # ANSIBLE
 
 alias ap="ansible-playbook"
