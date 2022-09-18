@@ -1,7 +1,8 @@
 brew install kubernetes-cli \
   helm \
   node \
-  neovim
+  neovim \
+  bash-completion
 
 brew install --cask docker \
   insomnia \
@@ -9,4 +10,5 @@ brew install --cask docker \
   sourcetree \ 
   cyberduck \
   lens \
-  visual-studio-code 
+  visual-studio-code \
+  min

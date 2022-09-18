@@ -1,1 +1,5 @@
-{ "terminal.integrated.defaultProfile.osx": "bash" }
+{
+  "explorer.compactFolders": false,
+  "terminal.integrated.defaultProfile.osx": "bash",
+  "editor.tabSize": 2
+}
