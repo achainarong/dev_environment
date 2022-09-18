@@ -20,8 +20,11 @@ alias gs="git status"
 alias gd="git 2"
 alias gb="git branch"222
 alias gm="git checkout main"
+alias gl="git log"
 alias commit="git commit -am"
 alias push="git push"
+
+
 
 # ANSIBLE
 
