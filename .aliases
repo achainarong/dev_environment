@@ -4,6 +4,10 @@ alias ...="cd ../.."
 alias ....="cd ../../.."
 alias .....="cd ../../../.."
 
+# COMMON COMMANDS
+
+alias ll="ls -lG"
+
 # COMMON DIRECTORIES
 
 alias dl="cd ~/Downloads"
