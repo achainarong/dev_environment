@@ -12,3 +12,5 @@ brew install --cask docker \
   lens \
   visual-studio-code \
   min
+
+brew reinstall source-highlight

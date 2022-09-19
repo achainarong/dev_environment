@@ -2,6 +2,6 @@ set number
 set tabstop=2
 set shiftwidth=2
 set expandtab
+set re=2
 
 syntax on
-colorscheme onedark
