@@ -1,3 +1,24 @@
+let g:coc_global_extensions = [
+  \'coc-tsserver', 
+  \'coc-yaml', 
+  \'coc-python', 
+  \'coc-clangd', 
+  \'coc-html', 
+  \'coc-css', 
+  \'coc-sh', 
+  \'coc-omnisharp', 
+  \'coc-go', 
+  \'coc-eslint',
+  \'coc-prettier',
+  \'coc-flutter']
+
+set nocompatible
+filetype off
+set rtp+=~/.vim/bundle/Vundle.vim
+
+call vundle#begin()
+
+Plugin 'VundleVim/Vundle.vim'
 Plugin 'peitalin/vim-jsx-typescript'
 Plugin 'pangloss/vim-javascript'
 Plugin 'leafgarland/typescript-vim'
