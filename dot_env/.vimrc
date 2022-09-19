@@ -10,10 +10,14 @@ Plugin 'peitalin/vim-jsx-typescript'
 Plugin 'pangloss/vim-javascript'
 Plugin 'leafgarland/typescript-vim'
 Plugin 'neoclide/coc.nvim'
-
+Plugin 'preservim/nerdtree'
 
 call vundle#end()
 filetype plugin indent on 
+
+nmap <F1> :NERDTreeToggle<CR>
+inoremap <silent><expr> <tab> pumvisible() ? coc#_select_confirm() : "\<C-g>u\<TAB>"
+inoremap <silent><expr> <cr> "\<c-g>u\<CR>"
 
 set number
 set tabstop=2
@@ -24,4 +28,3 @@ set shell=/bin/bash
 setlocal indentkeys+=0
 
 syntax on
-
