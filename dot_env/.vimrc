@@ -24,6 +24,7 @@ Plugin 'leafgarland/typescript-vim'
 Plugin 'neoclide/coc.nvim'
 Plugin 'preservim/nerdtree'
 Plugin 'tpope/vim-commentary'
+Plugin 'junegunn/fzf'
 
 call vundle#end()
 filetype plugin indent on 
