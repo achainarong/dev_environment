@@ -11,9 +11,12 @@ Plugin 'pangloss/vim-javascript'
 Plugin 'leafgarland/typescript-vim'
 Plugin 'neoclide/coc.nvim'
 Plugin 'preservim/nerdtree'
+Plugin 'tpope/vim-commentary'
 
 call vundle#end()
 filetype plugin indent on 
+
+autocmd VimEnter * NERDTree
 
 nmap <F1> :NERDTreeToggle<CR>
 inoremap <silent><expr> <tab> pumvisible() ? coc#_select_confirm() : "\<C-g>u\<TAB>"
