@@ -1,4 +1,16 @@
-let g:coc_global_extensions = ['coc-tsserver', 'coc-yaml', 'coc-python', 'coc-clangd', 'coc-html', 'coc-css', 'coc-sh', 'coc-omnisharp', 'coc-go']
+let g:coc_global_extensions = [
+  'coc-tsserver', 
+  'coc-yaml', 
+  'coc-python', 
+  'coc-clangd', 
+  'coc-html', 
+  'coc-css', 
+  'coc-sh', 
+  'coc-omnisharp', 
+  'coc-go', 
+  'coc-eslint',
+  'coc-prettier']
+
 set nocompatible
 filetype off
 set rtp+=~/.vim/bundle/Vundle.vim
@@ -16,9 +28,16 @@ Plugin 'tpope/vim-commentary'
 call vundle#end()
 filetype plugin indent on 
 
-autocmd VimEnter * NERDTree
+function! StartUp()
+    if 0 == argc()
+        NERDTree
+    end
+endfunction
+
+autocmd VimEnter * call StartUp()
 
 nmap <F1> :NERDTreeToggle<CR>
+
 inoremap <silent><expr> <tab> pumvisible() ? coc#_select_confirm() : "\<C-g>u\<TAB>"
 inoremap <silent><expr> <cr> "\<c-g>u\<CR>"
 
@@ -31,3 +50,4 @@ set shell=/bin/bash
 setlocal indentkeys+=0
 
 syntax on
+
