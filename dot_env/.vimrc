@@ -1,23 +1,3 @@
-let g:coc_global_extensions = [
-  \'coc-tsserver', 
-  \'coc-yaml', 
-  \'coc-python', 
-  \'coc-clangd', 
-  \'coc-html', 
-  \'coc-css', 
-  \'coc-sh', 
-  \'coc-omnisharp', 
-  \'coc-go', 
-  \'coc-eslint',
-  \'coc-prettier']
-
-set nocompatible
-filetype off
-set rtp+=~/.vim/bundle/Vundle.vim
-
-call vundle#begin()
-
-Plugin 'VundleVim/Vundle.vim'
 Plugin 'peitalin/vim-jsx-typescript'
 Plugin 'pangloss/vim-javascript'
 Plugin 'leafgarland/typescript-vim'
@@ -39,12 +19,12 @@ autocmd VimEnter * call StartUp()
 
 let NERDTreeShowHidden=1
 
-command! -nargs=0 Prettier :CocCommand prettier.forceFormatDocument
-
 nmap <F1> :NERDTreeToggle<CR>
 
 inoremap <silent><expr> <tab> pumvisible() ? coc#_select_confirm() : "\<C-g>u\<TAB>"
 inoremap <silent><expr> <cr> "\<c-g>u\<CR>"
+
+command! -nargs=0 Prettier :call CocAction('runCommand', 'prettier.formatFile')
 
 set number
 set tabstop=2
