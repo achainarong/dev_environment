@@ -13,6 +13,10 @@ alias p="cd ~/Documents/projects"
 alias dev="cd ~/Development"
 alias home="cd ~"
 
+# COMMON COMMANDS
+
+alias ll="ls -lG"
+
 # GIT
 
 alias g="git"
