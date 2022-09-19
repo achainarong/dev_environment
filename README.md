@@ -11,6 +11,8 @@ This setup is for my own private mac
 
   # Bash
   cp -R dot_env/ ~
+
+  # Configurate Vim
   cd ~/.vim/bundle/coc.nvim && yarn install && cd
   vim -c "PluginInstall" -c "CocInstall" -c "qa"
 
