@@ -1,15 +1,15 @@
 let g:coc_global_extensions = [
-  'coc-tsserver', 
-  'coc-yaml', 
-  'coc-python', 
-  'coc-clangd', 
-  'coc-html', 
-  'coc-css', 
-  'coc-sh', 
-  'coc-omnisharp', 
-  'coc-go', 
-  'coc-eslint',
-  'coc-prettier']
+  \'coc-tsserver', 
+  \'coc-yaml', 
+  \'coc-python', 
+  \'coc-clangd', 
+  \'coc-html', 
+  \'coc-css', 
+  \'coc-sh', 
+  \'coc-omnisharp', 
+  \'coc-go', 
+  \'coc-eslint',
+  \'coc-prettier']
 
 set nocompatible
 filetype off
@@ -36,6 +36,10 @@ endfunction
 
 autocmd VimEnter * call StartUp()
 
+let NERDTreeShowHidden=1
+
+command! -nargs=0 Prettier :CocCommand prettier.forceFormatDocument
+
 nmap <F1> :NERDTreeToggle<CR>
 
 inoremap <silent><expr> <tab> pumvisible() ? coc#_select_confirm() : "\<C-g>u\<TAB>"
@@ -50,4 +54,3 @@ set shell=/bin/bash
 setlocal indentkeys+=0
 
 syntax on
-
