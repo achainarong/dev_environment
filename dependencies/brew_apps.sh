@@ -9,7 +9,7 @@ brew install --cask docker \
   anaconda \
   sourcetree \ 
   cyberduck \
-  lens \
+  openlens \
   visual-studio-code \
   min
 
