@@ -1,15 +1,16 @@
 let g:coc_global_extensions = [
-  \'coc-tsserver', 
-  \'coc-yaml', 
-  \'coc-python', 
-  \'coc-clangd', 
-  \'coc-html', 
-  \'coc-css', 
-  \'coc-sh', 
-  \'coc-omnisharp', 
-  \'coc-go', 
+  \'coc-tsserver',
+  \'coc-yaml',
+  \'coc-python',
+  \'coc-clangd',
+  \'coc-html',
+  \'coc-css',
+  \'coc-sh',
+  \'coc-omnisharp',
+  \'coc-go',
   \'coc-eslint',
   \'coc-prettier',
+  \'coc-cmake',
   \'coc-flutter']
 
 set nocompatible
