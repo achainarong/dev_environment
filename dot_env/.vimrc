@@ -57,3 +57,7 @@ set shell=/bin/bash
 setlocal indentkeys+=0
 
 syntax on
+
+hi CocHintFloat ctermfg=12 ctermbg=DarkGrey guifg=#15aabf guibg=#5c5c5c
+ hi CocFloating ctermbg=DarkGrey guibg=#e4e4e4
+ hi CocInlayHint ctermfg=12 ctermbg=DarkGrey guifg=#15aabf guibg=#5c5c5c
