@@ -1,3 +1,16 @@
+" configs
+
+set number
+set tabstop=2
+set shiftwidth=2
+set expandtab
+set re=2
+set shell=/bin/bash
+setlocal indentkeys+=0
+
+syntax on
+
+" plugins
 let g:coc_global_extensions = [
   \'coc-tsserver',
   \'coc-yaml',
@@ -41,23 +54,27 @@ autocmd VimEnter * call StartUp()
 
 let NERDTreeShowHidden=1
 
+" keymappings
+
+nmap <silent> gs :call CocAction('jumpDefinition', 'split')<CR>
+nmap <silent> gd :call CocAction('jumpDefinition', 'vsplit')<CR>
+nmap <silent> gt :call CocAction('jumpDefinition', 'tabe')<CR>
 nmap <F1> :NERDTreeToggle<CR>
 
+inoremap ( ()<Left>
+inoremap [ []<Left>
+inoremap { {}<Left>
 inoremap <silent><expr> <tab> pumvisible() ? coc#_select_confirm() : "\<C-g>u\<TAB>"
 inoremap <silent><expr> <cr> "\<c-g>u\<CR>"
 
+" commands
+
 command! -nargs=0 Prettier :call CocAction('runCommand', 'prettier.formatFile')
 
-set number
-set tabstop=2
-set shiftwidth=2
-set expandtab
-set re=2
-set shell=/bin/bash
-setlocal indentkeys+=0
 
-syntax on
+" colors
 
 hi CocHintFloat ctermfg=12 ctermbg=DarkGrey guifg=#15aabf guibg=#5c5c5c
 hi CocFloating ctermbg=DarkGrey guibg=#e4e4e4
 hi CocInlayHint ctermfg=12 ctermbg=DarkGrey guifg=#15aabf guibg=#5c5c5c
+
