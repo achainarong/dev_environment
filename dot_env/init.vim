@@ -41,9 +41,20 @@ call plug#end()
 
 filetype plugin indent on
 
-inoremap <silent><expr> <tab> pumvisible() ? coc#_select_confirm() : "\<C-g>u\<TAB>"
-inoremap <silent><expr> <cr> "\<c-g>u\<CR>"
+" keymappings
 
 nmap <silent> gs :call CocAction('jumpDefinition', 'split')<CR>
 nmap <silent> gd :call CocAction('jumpDefinition', 'vsplit')<CR>
 nmap <silent> gt :call CocAction('jumpDefinition', 'tabe')<CR>
+nmap <F1> :NERDTreeToggle<CR>
+
+inoremap ( ()<Left>
+inoremap [ []<Left>
+inoremap { {}<Left>
+inoremap <silent><expr> <tab> pumvisible() ? coc#_select_confirm() : "\<C-g>u\<TAB>"
+inoremap <silent><expr> <cr> "\<c-g>u\<CR>"
+
+" commands
+
+command! -nargs=0 Pr :call CocAction('runCommand', 'prettier.formatFile')
+
