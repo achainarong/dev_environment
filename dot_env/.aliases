@@ -43,5 +43,6 @@ alias terra="terraform"
 alias py="python"
 
 # VIM 
-alias vf="vim \$(fzf)"
+alias vf="vim \$(fzfi)"
+alias fzfi='rg --files --hidden --follow --no-ignore-vcs -g "!{node_modules,.git}" | fzf'
 
