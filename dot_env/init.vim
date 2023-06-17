@@ -36,6 +36,7 @@ Plug 'neoclide/coc.nvim'
 Plug 'preservim/nerdtree'
 Plug 'tpope/vim-commentary'
 Plug 'junegunn/fzf'
+Plug 'rhysd/vim-clang-format'
 
 call plug#end()
 
@@ -58,4 +59,5 @@ inoremap <silent><expr> <cr> "\<c-g>u\<CR>"
 " commands
 
 command! -nargs=0 Pr :call CocAction('runCommand', 'prettier.formatFile')
+command! -nargs=0 Cf :call CocAction('runCommand', 'ClangFormat')
 
