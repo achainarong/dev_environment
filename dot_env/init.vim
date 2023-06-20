@@ -40,6 +40,16 @@ Plug 'rhysd/vim-clang-format'
 
 call plug#end()
 
+function! StartUp()
+    if 0 == argc()
+        NERDTree
+    end
+endfunction
+
+autocmd VimEnter * call StartUp()
+
+let NERDTreeShowHidden=1
+
 filetype plugin indent on
 
 " keymappings
