@@ -12,6 +12,7 @@ alias dc="cd ~/Documents"
 alias p="cd ~/Documents/projects"
 alias dev="cd ~/Development"
 alias home="cd ~"
+alias cfg="cd ~/.config"
 
 # GIT
 
